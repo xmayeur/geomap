@@ -78,7 +78,7 @@ for idx, r in df.iterrows():
             icon=folium.Icon(color="red"),
         ).add_to(m)
     except:
-        log.error("X " + r["prenom"] + " " + r["nom"] + " " + address)
+        log.error("X " + r["prenom"] + " " + r["nom"] + ":  " + address)
         continue
     log.info(r["prenom"] + " " + r["nom"])
 m.save("/Users/xavier/PycharmProjects/geomap/index.html")
